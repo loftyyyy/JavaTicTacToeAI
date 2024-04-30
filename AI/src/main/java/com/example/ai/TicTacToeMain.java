@@ -26,7 +26,7 @@ public class TicTacToeMain {
     Pane gamePane;
     @FXML
     //Top Buttons
-    private Button topLeftButton;
+    protected Button topLeftButton;
 
     @FXML
     private Button topMiddleButton;
