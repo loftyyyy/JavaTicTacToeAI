@@ -22,6 +22,16 @@ public class TicTacToeMain {
     AudioClip clipX = new AudioClip(Paths.get("C:\\Users\\Sean Rommel E\\eclipse-workspace\\TicTac\\SFX\\button1.mp3").toUri().toString());
     AudioClip clipO = new AudioClip(Paths.get("C:\\Users\\Sean Rommel E\\eclipse-workspace\\TicTac\\SFX\\button2.mp3").toUri().toString());
 
+    // Winning combinations
+    // A31       A32         A33
+    // TopLeft TopMiddle TopRight
+    // A21          A22     A23
+    // MiddleLeft Middle MiddleRight
+    // A11          A12         A13
+    // BottomLeft BottomMiddle BottomRight
+    //
+
+
     @FXML
     Pane gamePane;
     @FXML
