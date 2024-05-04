@@ -9,47 +9,47 @@
 
 <Pane fx:id="gamePane" maxHeight="683.0" maxWidth="468.0" minHeight="544.0" minWidth="463.0" prefHeight="683.0" prefWidth="463.0" style="-fx-background-color: #F9EFDB;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ai.TicTacToeMain">
   <children>
-    <Button fx:id="topLeftButton" layoutX="2.0" layoutY="1.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="178.0" prefWidth="151.0" style="-fx-background-color: EBD9B4;" textFill="Red">
+    <Button fx:id="A31" layoutX="2.0" layoutY="1.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="178.0" prefWidth="151.0" style="-fx-background-color: EBD9B4;" textFill="Red">
       <font>
         <Font size="72.0" />
       </font>
     </Button>
-    <Button fx:id="topMiddleButton" layoutX="157.0" layoutY="1.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="178.0" prefWidth="151.0" style="-fx-background-color: EBD9B4;">
+    <Button fx:id="A32" layoutX="157.0" layoutY="1.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="178.0" prefWidth="151.0" style="-fx-background-color: EBD9B4;">
       <font>
         <Font size="72.0" />
       </font>
     </Button>
-    <Button fx:id="topRightButton" layoutX="311.0" layoutY="1.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="178.0" prefWidth="151.0" style="-fx-background-color: EBD9B4;">
+    <Button fx:id="A33" layoutX="311.0" layoutY="1.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="178.0" prefWidth="151.0" style="-fx-background-color: EBD9B4;">
       <font>
         <Font size="72.0" />
       </font>
     </Button>
-    <Button fx:id="middleLeftButton" layoutX="2.0" layoutY="183.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="178.0" prefWidth="151.0" style="-fx-background-color: EBD9B4;">
+    <Button fx:id="A21" layoutX="2.0" layoutY="183.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="178.0" prefWidth="151.0" style="-fx-background-color: EBD9B4;">
       <font>
         <Font size="72.0" />
       </font>
     </Button>
-    <Button fx:id="middleMiddleButton" layoutX="157.0" layoutY="183.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="178.0" prefWidth="151.0" style="-fx-background-color: EBD9B4;">
+    <Button fx:id="A22" layoutX="157.0" layoutY="183.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="178.0" prefWidth="151.0" style="-fx-background-color: EBD9B4;">
       <font>
         <Font size="72.0" />
       </font>
     </Button>
-    <Button fx:id="middleRightButton" layoutX="311.0" layoutY="183.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="178.0" prefWidth="151.0" style="-fx-background-color: EBD9B4;">
+    <Button fx:id="A23" layoutX="311.0" layoutY="183.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="178.0" prefWidth="151.0" style="-fx-background-color: EBD9B4;">
       <font>
         <Font size="72.0" />
       </font>
     </Button>
-    <Button fx:id="bottomLeftButton" layoutX="2.0" layoutY="365.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="178.0" prefWidth="151.0" style="-fx-background-color: EBD9B4;">
+    <Button fx:id="A11" layoutX="2.0" layoutY="365.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="178.0" prefWidth="151.0" style="-fx-background-color: EBD9B4;">
       <font>
         <Font size="72.0" />
       </font>
     </Button>
-    <Button fx:id="bottomMiddleButton" layoutX="157.0" layoutY="365.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="178.0" prefWidth="151.0" style="-fx-background-color: EBD9B4;">
+    <Button fx:id="A12" layoutX="157.0" layoutY="365.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="178.0" prefWidth="151.0" style="-fx-background-color: EBD9B4;">
       <font>
         <Font size="72.0" />
       </font>
     </Button>
-    <Button fx:id="bottomRightButton" layoutX="311.0" layoutY="365.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="178.0" prefWidth="151.0" style="-fx-background-color: EBD9B4;">
+    <Button fx:id="A13" layoutX="311.0" layoutY="365.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="178.0" prefWidth="151.0" style="-fx-background-color: EBD9B4;">
       <font>
         <Font size="72.0" />
       </font>
@@ -64,7 +64,7 @@
         <Font name="Tahoma Bold" size="19.0" />
       </font>
     </Label>
-    <Button fx:id="resetButton" layoutX="180.0" layoutY="629.0" mnemonicParsing="false" onAction="#resetGame" prefHeight="40.0" prefWidth="84.0" text="Reset">
+    <Button fx:id="resetButton" layoutX="180.0" layoutY="629.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="40.0" prefWidth="84.0" text="Reset">
       <font>
         <Font name="Tahoma Bold" size="12.0" />
       </font>
