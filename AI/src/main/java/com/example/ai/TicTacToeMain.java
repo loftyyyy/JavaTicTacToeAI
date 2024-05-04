@@ -1,18 +1,14 @@
 package com.example.ai;
 
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
-import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Control;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.scene.media.AudioClip;
-import javafx.scene.paint.Color;
-import javafx.util.Duration;
 
 import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TicTacToeMain {
     int letter = 1;
@@ -24,42 +20,42 @@ public class TicTacToeMain {
 
 
     @FXML
-    Pane gamePane;
+    protected static Pane gamePane;
     @FXML
     //Top Buttons
     protected static Button A31;
     @FXML
-    private static Button A32;
+    protected static Button A32;
     @FXML
-    private static Button A33;
+    protected static Button A33;
 
     //Middle Buttons
     @FXML
-    private static Button A21;
+    protected static Button A21;
     @FXML
-    private static Button A22;
+    protected static Button A22;
     @FXML
-    private static Button A23;
+    protected static Button A23;
 
     //Bottom Buttons
     @FXML
-    private static Button A11;
+    protected static Button A11;
     @FXML
-    private static Button A12;
+    protected static Button A12;
     @FXML
-    private static Button A13;
+    protected static Button A13;
 
     // Reset button
     @FXML
-    private Button resetButton;
+    protected static Button resetButton;
     @FXML
-    private Label oScore;
+    protected static Label oScore;
 
     @FXML
-    private Label xScore;
+    protected static Label xScore;
 
     @FXML
-    private Label scoreLabel;
+    protected static Label scoreLabel;
 
     // Winning combinations
     // A31       A32         A33
@@ -77,6 +73,24 @@ public class TicTacToeMain {
     public static Button[] C6 = {A13,A23,A33};
     public static Button[] C7 = {A11,A22,A33};
     public static Button[] C8 = {A13,A22,A31};
+
+    public static Map<String, Button[][]> buttonMaps = new HashMap<String, Button[][]>();
+
+
+
+
+    public static void main(String[] args){
+        buttonMaps.put("A11", new Button[][]{C1, C4, C7});
+        buttonMaps.put("A12", new Button[][]{C1, C5});
+        buttonMaps.put("A13", new Button[][]{C1, C6, C8});
+        buttonMaps.put("A21", new Button[][]{C2, C4});
+        buttonMaps.put("A22", new Button[][]{C2, C5, C7, C8});
+        buttonMaps.put("A23", new Button[][]{C2, C6});
+        buttonMaps.put("A31", new Button[][]{C3, C4, C8});
+        buttonMaps.put("A32", new Button[][]{C3, C5});
+        buttonMaps.put("A33", new Button[][]{C3, C6, C7});
+    }
+
 
 
 }
