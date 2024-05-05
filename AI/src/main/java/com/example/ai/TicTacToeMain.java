@@ -74,22 +74,22 @@ public class TicTacToeMain {
     protected Button[] C7 = {A11,A22,A33};
     protected Button[] C8 = {A13,A22,A31};
 
+    protected Button[][] poss = {C1,C2,C3,C4,C5,C6,C7,C8};
 
 
 
 
 
-    public void buttonClick(ActionEvent btn){
-        if(turn % 2 == 0){
-            Player player = new Player(btn.getEventType());
-            player.pTurn();
-        }else{
-            AI ai = new AI();
+
+    public void buttonClick(){
+
+        for(int i = 0; i < C1.length; i++){
+            C1[i].setText("hi");
+
         }
-        checkWinner();
-
     }
     public void checkWinner(){
+
 
     }
     public Button getA11(){
