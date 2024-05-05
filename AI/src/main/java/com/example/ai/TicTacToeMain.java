@@ -8,6 +8,9 @@ import javafx.scene.layout.Pane;
 import javafx.scene.media.AudioClip;
 
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class TicTacToeMain {
     int letter = 1;
@@ -65,16 +68,26 @@ public class TicTacToeMain {
     // A11          A12         A13
     // BottomLeft BottomMiddle BottomRight
     //
-    protected Button[] C1 = {A11, A12, A13};
-    protected Button[] C2 = {A21,A22,A23};
-    protected Button[] C3 = {A31,A32,A33};
-    protected Button[] C4 = {A11,A21,A31};
-    protected Button[] C5 = {A12,A22,A32};
-    protected Button[] C6 = {A13,A23,A33};
-    protected Button[] C7 = {A11,A22,A33};
-    protected Button[] C8 = {A13,A22,A31};
+    protected List<Button> C1 = new ArrayList<>();
 
-    protected Button[][] poss = {C1,C2,C3,C4,C5,C6,C7,C8};
+    protected List<Button> C2 = new ArrayList<>();
+    protected List<Button> C3 = new ArrayList<>();
+    protected List<Button> C4 = new ArrayList<>();
+    protected List<Button> C5 = new ArrayList<>();
+    protected List<Button> C6 = new ArrayList<>();
+    protected List<Button> C7 = new ArrayList<>();
+    protected List<Button> C8 = new ArrayList<>();
+
+    protected List<Button> test = new ArrayList<>();
+
+//    protected Button[] C2 = {A21,A22,A23};
+//    protected Button[] C3 = {A31,A32,A33};
+//    protected Button[] C4 = {A11,A21,A31};
+//    protected Button[] C5 = {A12,A22,A32};
+//    protected Button[] C6 = {A13,A23,A33};
+//    protected Button[] C7 = {A11,A22,A33};
+//    protected Button[] C8 = {A13,A22,A31};
+
 
 
 
@@ -82,11 +95,12 @@ public class TicTacToeMain {
 
 
     public void buttonClick(){
+        for(Button button : test){
 
-        for(int i = 0; i < C1.length; i++){
-            C1[i].setText("hi");
+            button.setText("j");
 
         }
+
     }
     public void checkWinner(){
 
@@ -95,6 +109,49 @@ public class TicTacToeMain {
     public Button getA11(){
         return A11;
     }
+
+    @FXML
+    private void initialize(){
+        C1.add(A11);
+        C1.add(A12);
+        C1.add(A13);
+
+        C2.add(A21);
+        C2.add(A22);
+        C2.add(A23);
+
+        C3.add(A31);
+        C3.add(A32);
+        C3.add(A33);
+
+        C4.add(A11);
+        C4.add(A21);
+        C4.add(A31);
+
+        C5.add(A12);
+        C5.add(A22);
+        C5.add(A32);
+
+        C6.add(A13);
+        C6.add(A23);
+        C6.add(A33);
+
+        C7.add(A11);
+        C7.add(A22);
+        C7.add(A33);
+
+        C8.add(A13);
+        C8.add(A22);
+        C8.add(A31);
+
+        test.addAll(C2);
+
+//    protected Button[] C5 = {A12,A22,A32};
+//    protected Button[] C6 = {A13,A23,A33};
+//    protected Button[] C7 = {A11,A22,A33};
+//    protected Button[] C8 = {A13,A22,A31};
+    }
+
 
 
 
